@@ -84,6 +84,7 @@ html {
 
 /* Main */
 #main {
+  overflow:hidden;
 }
 
 #nav {
@@ -93,7 +94,6 @@ html {
 #nav > li {
   display: inline-block;
   height: 46.5px;
-  position: relative;
 }
 
 #nav li:hover > a {
@@ -153,6 +153,7 @@ html {
   background-color: black;
   z-index: 1;
 }
+.menu-mobile,
 .search-btn{
   float: right;
   color: white;
@@ -162,6 +163,19 @@ html {
 .search-btn .search-icon{
   font-size: 15px;
   padding: 16px 24px;
+}
+.menu-mobile{
+  font-size: 15px;
+  padding:0px 24px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display:none;
+}
+
+.menu-mobile:hover{
+  background-color:#ccc;
+  color:black;
 }
 
 .search-btn .search-icon:hover{
@@ -210,6 +224,7 @@ html {
 }
 #content .about-sections{
   width: 800px;
+  max-width: 100%;
   padding: 64px 16px;
   margin-right:auto;
   margin-left: auto;
@@ -422,6 +437,9 @@ html {
   cursor: pointer;
 }
 
+.contact-content{
+  padding:0px 16px;
+}
 
 .contact-info{
   font-size: 18px;
@@ -501,3 +519,5 @@ html {
     transform: translateY(0px)
   }
 }
+
+
