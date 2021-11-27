@@ -1,18 +1,21 @@
 /* BREAK POINT */
 /* PC */
 @media(min-width:1024px){
-
+    #header{
+        height:46.5px !important;
+    }
 }
 
 /* Tablet */
 @media(min-width:740px) and (max-width:1023px){
-
+    #header{
+        height:46.5px !important;
+    }
 }
 /* Moblie */
 @media(max-width:739px){
     #header{
         overflow: hidden;
-        
     }
 
     #nav{
@@ -20,7 +23,12 @@
     }
 
     #nav .subnav{
-        position:initial
+        width:100%;
+        background-color:#333;
+    }
+    #nav .subnav a{
+        padding:0px 78px;
+        color:#ccc;
     }
 
     #nav > li,
@@ -38,6 +46,32 @@
 
     .menu-mobile{
         display:block
+    }
+    #content .mobile-place-item,
+    #content .mobile-member-item{
+        width:100%;
+    }
+    #content .mobile-place-item{
+        margin-bottom: 16px;
+    }
+    #content .member-img{
+        width:60%;
+    }
+
+
+    .mobile-contact{
+        width:100%;
+    }
+
+    .contact-form{
+        padding-top:16px;
+    }
+
+    .form-email,.form-name{
+        padding:0px;
+    }
+    .btn{
+        width:100%;
     }
     
 }

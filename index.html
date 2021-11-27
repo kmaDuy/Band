@@ -54,15 +54,15 @@
                 <p class="description">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <!-- Begin member list -->
                 <div class="row member-list">
-                    <div class="col col-thirds member-item">
+                    <div class="mobile-member-item col col-thirds member-item">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-thirds member-item">
+                    <div class="mobile-member-item col col-thirds member-item">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
-                    <div class="col col-thirds member-item">
+                    <div class="mobile-member-item col col-thirds member-item">
                         <p class="member-name">Name</p>
                         <img src="./asset/img/bandmember.jpg" alt="Name" class="member-img">
                     </div>
@@ -86,7 +86,7 @@
                     </div>
                     <!-- Begin place -->
                     <div class="row place-list">
-                        <div class="col col-thirds">
+                        <div class="mobile-place-item col col-thirds">
                             <img src="./asset/img/newyork.jpg" alt="Newyork" class="place-img">
                             <div class="place-information">
                                 <h4 class="place-name">New York</h4>
@@ -95,7 +95,7 @@
                                 <button class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
-                        <div class="col col-thirds">
+                        <div class="mobile-place-item col col-thirds">
                             <img src="./asset/img/paris.jpg" alt="Paris" class="place-img">
                             <div class="place-information">
                                 <h4 class="place-name">Paris</h4>
@@ -105,7 +105,7 @@
     
                             </div>
                         </div>
-                        <div class="col col-thirds">
+                        <div class="mobile-place-item col col-thirds">
                             <img src="./asset/img/sanfran.jpg" alt="Newyork" class="place-img">
                             <div class="place-information">
                                 <h4 class="place-name">San Francisco</h4>
@@ -127,18 +127,18 @@
                 <h2 class="sections-title">CONTACT</h2>
                 <p class="sections-slogan">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-seconds contact-info">
+                    <div class="mobile-contact col col-seconds contact-info">
                         <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
                         <p><i class="fas fa-phone-alt"></i> Phone: +00 151515</p>
                         <p><i class="fas fa-envelope"></i> Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-seconds contact-form">
+                    <div class="mobile-contact col col-seconds contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-seconds form-name">
+                                <div class="mobile-contact col col-seconds form-name">
                                     <input type="text" placeholder="Name" required class="form-control">
                                 </div>
-                                <div class="col col-seconds form-email">
+                                <div class="mobile-contact col col-seconds form-email">
                                     <input type="email" placeholder="Email" required class="form-control">
                                 </div>
                             </div>
@@ -250,6 +250,7 @@
                 var checkParentItem = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
                 if (checkParentItem){
                     event.preventDefault();
+                    header.style.height='350px'; //Cho phần header bao quanh phần subnav
                 }
                 else{
                     header.style.height=null;
